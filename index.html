@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<meta charset="utf-8" />
+	<title>Макет</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo.png">
+		</div>
+	</header>
+	<div id="wrapper">
+			<div class="basket">
+				<span class="logo_basket"><img src="img/basket.png">Корзина</span>
+				<div class="in_basket"></div>
+				<div class="total">Всего: <span class="sum">0.0</span> руб.</div>
+				<button class="order">Оформить заказ</button>
+			</div>
+			<div class="items">
+				<div class="item">
+					<div class="itemInner">
+						<img src="img/box1.png">
+						<div>
+							<div class="name">Пакет видеопрограмм</div>
+							<div class="about">Пакет лучших программ для работы с видео! Редактируйте на монтажном столе. Конвертируйте в любые форматы. Создавайте слайд-шоу. Нарезайте видео. Захватывайте видео с экрана, камер и ТВ-тюнера. Записывайте DVD и диски Blu-ray.</div>
+						</div>
+						<div class="to_basket">
+							<div class="price"><span>1990</span> руб.</div>
+							<button class="but" id="1" onclick="addToCart(this.id);">В корзину!</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="itemInner">
+						<img src="img/box2.png">
+						<div>
+							<div class="name">Фотостудия Movavi</div>
+							<div class="about">Полный набор инструментов для легкой фотообработки. Настраивайте параметры изображения вручную и улучшайте качество автоматически, добавляйте крутые фильтры и надписи. Обрезайте, отражайте и поворачивайте кадр, изменяйте размер фото. Удаляйте с фото лишние объекты и заменяйте скучные фоны. Обрабатывайте папки с фото в пакетном режиме, создавайте слайд-шоу с музыкой и переходами.</div>
+						</div>
+						<div class="to_basket">
+							<div class="price"><span>1890</span> руб.</div>
+							<button class="but" id="2" onclick="addToCart(this.id);">В корзину!</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="itemInner">
+						<img src="img/box3.png">
+						<div>
+							<div class="name">Movavi Фоторедактор</div>
+							<div class="about">Улучшайте качество фото автоматически и вручную. Настраивайте резкость, контраст и цветность. Удаляйте с фотографий объекты, случайно попавшие в кадр. Заменяйте фон изображения. Добавляйте надписи. Выделяйте элементы при помощи удобных инструментов – кисти, волшебной палочки или лассо. Используйте штамп, чтобы устранять мелкие дефекты изображений. </div>
+						</div>
+						<div class="to_basket">
+							<div class="price"><span>990</span> руб.</div>
+							<button class="but" id="3" onclick="addToCart(this.id);">В корзину!</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="itemInner">
+						<img src="img/box4.png">
+						<div>
+							<div class="name">Movavi Пакетный фоторедактор</div>
+							<div class="about">Обрабатывайте любое количество фотографий одним нажатием кнопки – уменьшайте целые фотоальбомы, переименовывайте файлы, конвертируйте формат и улучшайте качество изображений в пакетном режиме. Теперь вам не придется сохранять каждый файл по отдельности: просто примените изменения ко всем фото сразу и экспортируйте их с новыми настройками!</div>
+						</div>
+						<div class="to_basket">
+							<div class="price"><span>490</span> руб.</div>
+							<button class="but" id="4" onclick="addToCart(this.id);">В корзину!</button>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="itemInner">
+						<img src="img/box5.png">
+						<div>
+							<div class="name">Захват видео с экрана</div>
+							<div class="about">Записывайте все, что происходит на экране вашего монитора: видеочаты, работу в программах и интернет-браузерах и многое другое. Сохраняйте скринкасты в любые популярные форматы и для мобильных устройств.</div>
+						</div>
+						<div class="to_basket">
+							<div class="price"><span>1490</span> руб.</div>
+							<button class="but" id="5" onclick="addToCart(this.id);">В корзину!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<footer class="footer">
+		<script type="text/javascript" src="script.js"></script>
+	</footer>
+</body>
+</html>
